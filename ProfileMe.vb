@@ -11,7 +11,7 @@ Public Class ProfileMe
     Private Sub ProfileMe_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             With cm
-                cm = New OleDb.OleDbCommand("SELECT sUsername, sPassword, sEmail, Fullname, Date of Birth, Date of Birth FROM UserProfile where sUsername =Dragon", cn)
+                cm = New OleDb.OleDbCommand("SELECT sUsername, sPassword, sEmail, Fullname, Date of Birth, Date of Birth FROM UserProfile where sUsername = accLvl", cn)
                 dr = .ExecuteReader
             End With
             While dr.Read()
