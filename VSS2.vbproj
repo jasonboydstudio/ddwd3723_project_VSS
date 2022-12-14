@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1D155509-B7EA-43BA-88F1-37D2BA21431D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>VSS2.My.MyApplication</StartupObject>
+    <RootNamespace>VSS2</RootNamespace>
+    <AssemblyName>VSS2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>VSS2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>VSS2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo no bg.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chatlobby.Designer.vb">
+      <DependentUpon>Chatlobby.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chatlobby.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chatroom1.Designer.vb">
+      <DependentUpon>Chatroom1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chatroom1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chatroom2.Designer.vb">
+      <DependentUpon>Chatroom2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chatroom2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChatsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database.Designer.vb">
+      <DependentUpon>Database.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Database.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Leaderboard.Designer.vb">
+      <DependentUpon>Leaderboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Leaderboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lobby1.Designer.vb">
+      <DependentUpon>Lobby1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lobby1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lobby2.Designer.vb">
+      <DependentUpon>Lobby2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lobby2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LobbySelect.Designer.vb">
+      <DependentUpon>LobbySelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LobbySelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login2DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>login2DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileMe.Designer.vb">
+      <DependentUpon>ProfileMe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileMe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileAdmin.Designer.vb">
+      <DependentUpon>ProfileAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileOther.Designer.vb">
+      <DependentUpon>ProfileOther.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileOther.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.vb">
+      <DependentUpon>Register.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Resources\Module1.vb" />
+    <Compile Include="Settings.Designer.vb">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VSSdatabaseDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VSSdatabaseDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="VSSdatabaseDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VSSdatabaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VSSdatabaseDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VSSdatabaseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VSSdatabaseDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VSSdatabaseDataSet3.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chatlobby.resx">
+      <DependentUpon>Chatlobby.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chatroom1.resx">
+      <DependentUpon>Chatroom1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chatroom2.resx">
+      <DependentUpon>Chatroom2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database.resx">
+      <DependentUpon>Database.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leaderboard.resx">
+      <DependentUpon>Leaderboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lobby1.resx">
+      <DependentUpon>Lobby1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lobby2.resx">
+      <DependentUpon>Lobby2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LobbySelect.resx">
+      <DependentUpon>LobbySelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileMe.resx">
+      <DependentUpon>ProfileMe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileAdmin.resx">
+      <DependentUpon>ProfileAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileOther.resx">
+      <DependentUpon>ProfileOther.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ChatsDataSet.xsc">
+      <DependentUpon>ChatsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ChatsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ChatsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ChatsDataSet.xss">
+      <DependentUpon>ChatsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="login2DataSet.xsc">
+      <DependentUpon>login2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="login2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>login2DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="login2DataSet.xss">
+      <DependentUpon>login2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="VSSdatabaseDataSet.xsc">
+      <DependentUpon>VSSdatabaseDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="VSSdatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VSSdatabaseDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="VSSdatabaseDataSet.xss">
+      <DependentUpon>VSSdatabaseDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="VSSdatabaseDataSet1.xsc">
+      <DependentUpon>VSSdatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="VSSdatabaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VSSdatabaseDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VSSdatabaseDataSet1.xss">
+      <DependentUpon>VSSdatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="VSSdatabaseDataSet2.xsc">
+      <DependentUpon>VSSdatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="VSSdatabaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VSSdatabaseDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VSSdatabaseDataSet2.xss">
+      <DependentUpon>VSSdatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="VSSdatabaseDataSet3.xsc">
+      <DependentUpon>VSSdatabaseDataSet3.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="VSSdatabaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VSSdatabaseDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="VSSdatabaseDataSet3.xss">
+      <DependentUpon>VSSdatabaseDataSet3.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo no bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Chats.mdb" />
+    <Content Include="login2.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logo no bg.ico" />
+    <None Include="Resources\AA_04799.jpg" />
+    <None Include="Resources\AA_04800.jpg" />
+    <None Include="Resources\AA_04803.jpg" />
+    <Content Include="VSSdatabase.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\home %281%29.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\miou.png" />
+    <None Include="Resources\reaper.jpeg" />
+    <None Include="Resources\wp6162914-valorant-desktop-wallpapers.png" />
+    <None Include="Resources\STATS.png" />
+    <None Include="Resources\STATS 2.png" />
+    <None Include="Resources\noun-leaderboard-2485488.png" />
+    <None Include="Resources\noun-home-icon-3574480.png" />
+    <None Include="Resources\noun-information-3987731.png" />
+    <None Include="Resources\noun-group-chat-2016877.png" />
+    <None Include="Resources\noun-gear-settings-3893124.png" />
+    <None Include="Resources\noun-profile-8548901.png" />
+    <None Include="Resources\noun-profile-854890.png" />
+    <None Include="Resources\News Valorant.jpeg" />
+    <None Include="Resources\1203245.jpg" />
+    <None Include="Resources\1074846.jpg" />
+    <None Include="Resources\1282982 %281%29.jpg" />
+    <None Include="Resources\HD_Jett_Agent_Valorant_Character_.png" />
+    <None Include="Resources\HD_Jett_Agent_Valorant_Charact1.png" />
+    <None Include="Resources\HD_Jett_Agent_Valorant_Charact.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
